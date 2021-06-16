@@ -1,0 +1,147 @@
+.body{
+background-color: #f4f5d6;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#fffffd 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #fffffd 1.4000000000000001px, #f4f5d6 1.4000000000000001px) -0.7000000000000001px 0;
+background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+.navbar a {
+  margin : 5px;
+  border-radius: 10px;
+  width: 120 px;
+  display: block;
+  float : left;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #363636;
+  background-color: #fffffd;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+}
+.navbar a:hover {
+  background-color: #eeeeee;
+}
+.navbar_div{
+  display: flex;
+  text-shadow: 1px 1px  #bdbdbd;
+  border-radius: 10px;
+  color : #424242;
+  width: 1500px;
+  height: 70px;
+  margin: 0;
+  justify-content: center;
+  background-color: #f4f5d6;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#fffffd 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #fffffd 1.4000000000000001px, #f4f5d6 1.4000000000000001px) -0.7000000000000001px 0;
+  background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+
+
+
+/*------------------------------------------------- Over image buttons------------------------------------------------*/
+
+
+/* Style the button and place it in the middle of the container/image */
+.overbtn1 {
+  position: absolute;
+  top: 13%;
+  right: 0px;
+  transform: translate(-20%, -10%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #363636;
+}
+
+.overbtn1:hover {
+  background-color: silver;
+}
+
+
+
+/* Style the button and place it in the middle of the container/image */
+.overbtn2 {
+  position: absolute;
+  top: 33%;
+  right: 0px;
+  transform: translate(-20%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  border: 2px solid #363636;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overbtn2:hover {
+  background-color: silver;
+}
+
+
+.overbtn3 {
+  position: absolute;
+  top: 35%;
+  right: 0px;
+  transform: translate(-20%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  border: 2px solid #363636;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overbtn3:hover {
+  background-color: silver;
+}
+
+.tablediv{
+  width: 1300px;
+  margin-left: 150px ;
+  margin-bottom: 100px ;
+  margin-right: 200px ;
+  margin-top : 70px;
+}
+.table{
+
+  width: 100%;
+  font-family: Georgia;
+  font-size: 1em;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  opacity: 1.5;
+  border-radius: 10px;
+  background-color:   #fbd682;
+  justify-content: center;
+  border: 1px solid #363636;
+}
+td{
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+
+}
+
+
+

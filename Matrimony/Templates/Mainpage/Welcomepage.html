@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'admin/css/Mainpage.css' %}" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body class="body">
+
+
+         <img class="img" src="{% static 'admin/img/Wedding1.jpg' %}">
+    {% if user.is_authenticated %}
+        <a class="btn btn-sm btn-info" onClick="redirect6()"><strong> View profiles created by {{user}} </strong></a>
+        <div class="overbtn3">
+            <button class="btn" onClick="redirect5()">Logout</button>
+        </div>
+    {% else %}
+        <div class="overbtn1">
+             <button class="btn" onclick="redirect3()">Login!</button>
+        </div>
+        <div class="overbtn2">
+             <button class="btn" onClick="redirect4()">Signup</button>
+        </div>
+    {% endif %}
+
+    <div id="myNav" class="overlay">
+       {% block content %}
+       <h1 class="overlay_font"><stong>Login</strong></h1>
+       <form method="POST" enctype="multipart/form-data">
+         {% csrf_token %}
+         {{ login_form}}
+         <button class="btn btn-primary" type="submit">Login</button>
+       </form>
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       <p ><a href="/signup">Create an account</a>.</p>
+      {% endblock %}
+     </div>
+
+
+    <div class="container">
+           <br>
+               <div class="row">
+                <div class="icons">
+                <input  type="image" class="icons" onClick="redirect1()" src="{% static 'admin/img/Brides.jpg' %}" name="submit" width="300" height="300" alt="submit"/>
+                <h5 class="font_tamil"><strong>மணமகள்</strong> <h5>
+                </div>
+
+                <div class="icons">
+                <input type="image" class="icons" onClick="redirect1()" src="{% static 'admin/img/Groom.jpg' %}" value="GROOMS"  name="submit" width="300" height="300" alt="submit"/>
+                <h5 class="font_tamil"><strong>மணம௧னஂ</strong><h5>
+                </div>
+
+                <div class="icons">
+                <input type="image"  class="icons" onClick="form1()" src="{% static 'admin/img/Register.jpg' %}" name="submit" width="300" height="300" alt="submit"/>
+                <h5 class="font_tamil"><strong>பதிவேற்றம்</strong></h5>
+                </div>
+              </div>
+
+    </div>
+
+    <script>
+    function form1() {
+      window.location.href = "http://127.0.0.1:8000/form";
+    }
+    function redirect1() {
+      window.location.href = "http://127.0.0.1:8000/Mainpage";
+    }
+    function redirect2() {
+      window.location.href = "http://127.0.0.1:8000/";
+    }
+    function redirect3() {
+      window.location.href = "http://127.0.0.1:8000/login";
+    }
+    function redirect4() {
+      window.location.href = "http://127.0.0.1:8000/signup";
+    }
+    function redirect5() {
+      window.location.href = "http://127.0.0.1:8000/logout";
+    }
+    function redirect6() {
+      window.location.href = "http://127.0.0.1:8000/reg";
+    }
+    /* Open when someone clicks on the span element */
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+    </script>
+
+
+
+  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>

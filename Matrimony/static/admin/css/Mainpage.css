@@ -1,0 +1,239 @@
+.body{
+background-color: #f4f5d6;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#fffffd 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #fffffd 1.4000000000000001px, #f4f5d6 1.4000000000000001px) -0.7000000000000001px 0;
+background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+.navbar a {
+  margin : 5px;
+  border-radius: 10px;
+  width: 120 px;
+  display: block;
+  float : left;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #363636;
+  background-color: #fffffd;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+}
+.navbar a:hover {
+  background-color: #eeeeee;
+}
+.navbar_div{
+  display: flex;
+  text-shadow: 1px 1px  #bdbdbd;
+  border-radius: 10px;
+  color : #424242;
+  width: 1500px;
+  height: 70px;
+  margin: 0;
+  justify-content: center;
+  background-color: #f4f5d6;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #f4f5d6 20%, #f4f5d6 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#fffffd 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #fffffd 1.4000000000000001px, #f4f5d6 1.4000000000000001px) -0.7000000000000001px 0;
+  background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+
+.icons{
+  margin: 20px 20px;
+  display : table;
+  border-radius: 150px;
+}
+.icons input:hover {
+  background-color: silver;
+  opacity: 0.7;
+}
+
+.box-element{
+background-color: #ead7a0;
+opacity: 1.1;
+background-size: 25px 25px;
+margin-bottom: 30px;
+}
+.font_tamil{
+  font-family: Times New Roman;
+  font-size: 3em;
+}
+.thumbnail{
+	width: 100%;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+    box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+.img {
+  border: 1px solid #424242;
+  border-radius: 1px;
+  padding: 0px;
+  height: 500px;
+  width: 1519px;
+}
+
+
+
+/*------------------------------------------------- Over image buttons------------------------------------------------*/
+
+
+/* Style the button and place it in the middle of the container/image */
+.overbtn1 {
+  position: absolute;
+  top: 13%;
+  right: 0px;
+  transform: translate(-20%, -10%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #363636;
+}
+
+.overbtn1:hover {
+  background-color: silver;
+}
+
+
+
+/* Style the button and place it in the middle of the container/image */
+.overbtn2 {
+  position: absolute;
+  top: 33%;
+  right: 0px;
+  transform: translate(-20%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  border: 2px solid #363636;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overbtn2:hover {
+  background-color: silver;
+}
+
+.user {
+  position: absolute;
+  top: 75%;
+  right: 0px;
+  transform: translate(-20%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: grey;
+  padding: 12px 24px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 300px;
+  border: 2px solid #363636;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overbtn3 {
+  position: absolute;
+  top: 35%;
+  right: 0px;
+  transform: translate(-20%, -100%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #99bde6;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 200px;
+  border: 2px solid #363636;
+  font-family: Georgia;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overbtn3:hover {
+  background-color: silver;
+}
+
+/*------------------------------------------------- Over image buttons------------------------------------------------*/
+
+ /* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 2%; /* 2% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay_font{
+  font-family: Georgia;
+  font-size: 5em;
+  font-weight: bold;
+  font-color: #e0e0e0;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} 
+
+.profile_bar{
+
+ margin-left : 5000 px;
+}
